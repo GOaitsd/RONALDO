@@ -13,6 +13,11 @@ local batp = test:CreateButton("سكربت C00LKID", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/cfsmi2/c00lguiv1/refs/heads/main/Main.lua", true))()
 
 end)
+local batp = test:CreateButton("سكربت VR7", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/VR7-ON-TOP"))()
+
+
+end)
 local batp = test:CreateButton("سكربت BRUTUN", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/bruton-lua/Brookhaven/refs/heads/main/BRUTON"))()
 
