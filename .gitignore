@@ -18,6 +18,12 @@ local batp = test:CreateButton("سكربت VR7", function()
 
 
 end)
+local batp = test:CreateButton("سكربت BANG اسطوري", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Z7F-KING/Z7F/refs/heads/main/Z7F-BY-zMz"))()
+
+
+
+end)
 local batp = test:CreateButton("سكربت BRUTUN", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/bruton-lua/Brookhaven/refs/heads/main/BRUTON"))()
 
