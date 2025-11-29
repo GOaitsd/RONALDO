@@ -1,41 +1,66 @@
-# Compiled Lua sources
-luac.out
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+local _, library = pcall(loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Osmium/main/OsmiumLibrary.lua")))
 
-# Precompiled Headers
-*.gch
-*.pch
+local window = library:CreateWindow("RONALDO v2")
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+local test = window:CreateTab("سكربتات معروفة")
+local player = window:CreateTab("الاعب")
+local admn = window:CreateTab("ادمن")
+local playerr = game.Players.LocalPlayer
+local danc = window:CreateTab("الرقصات")
+local batp = test:CreateButton("سكربت C00LKID", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cfsmi2/c00lguiv1/refs/heads/main/Main.lua", true))()
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+end)
+local batp = test:CreateButton("سكربت BRUTUN", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/bruton-lua/Brookhaven/refs/heads/main/BRUTON"))()
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
+end)
+
+local batp = test:CreateButton("سكربت MARTIN", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/martiniq799999/MARTIN-/refs/heads/main/Protected_5145856413563358.lua.txt"))()
+
+
+end)
+
+local batp = test:CreateButton("سكربت ALFA", function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/ALFA5675/ALFA/refs/heads/main/ALFA_IRAQ.lua.txt")))()
+
+
+end)
+
+local batp = test:CreateButton("سكربت NEYMAR HUB", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/neymar2929/Neymar/refs/heads/main/%D9%86%D9%8A%D9%85%D8%A7%D8%B1%20%D8%AA%D8%A7%D8%A8.lua"))()
+
+
+end)
+local batp = player:CreateButton("سرعة", function()
+
+playerr.Character.Humanoid.WalkSpeed = 100
+
+end)
+local batp = player:CreateButton("قوة القفز", function()
+
+   playerr.Character.Humanoid.JumpPower = 200
+
+end)
+
+local batp = player:CreateButton("الطيران", function()
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+
+end)
+local batp = admn:CreateButton("ادمن", function()
+
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/froumes/badinfiniteyield/refs/heads/master/source"))()
+
+
+end)
+local batp = danc:CreateButton("الرقصات", function()
+
+  loadstring(game:HttpGet("https://scriptblox.com/raw/Brookhaven-RP-all-emotes-6849"))()
+
+
+end)
