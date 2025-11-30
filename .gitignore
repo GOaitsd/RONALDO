@@ -4,11 +4,14 @@ local _, library = pcall(loadstring(game:HttpGet("https://raw.githubusercontent.
 
 local window = library:CreateWindow("RONALDO v2")
 
+
 local test = window:CreateTab("سكربتات معروفة")
+local troll = window:CreateTab("تخريب")
 local player = window:CreateTab("الاعب")
 local admn = window:CreateTab("ادمن")
 local playerr = game.Players.LocalPlayer
 local danc = window:CreateTab("الرقصات")
+local anti = window:CreateTab("مضادات")
 local batp = test:CreateButton("سكربت C00LKID", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/cfsmi2/c00lguiv1/refs/heads/main/Main.lua", true))()
 
@@ -76,3 +79,67 @@ local batp = danc:CreateButton("الرقصات", function()
 
 
 end)
+
+local batp = anti:CreateButton("مضاد جلوس", function()
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet('https://paste.myconan.net/573222.txt'))()
+
+local Workspace = game:GetService("Workspace")
+local Players = game:GetService("Players")
+
+local player = Players.LocalPlayer
+
+local function neutralizarAsiento(asiento)
+	if asiento:IsA("Seat") or asiento:IsA("VehicleSeat") then
+		asiento.Disabled = true
+		asiento.CanTouch = false
+		asiento:SetAttribute("Neutralizado", true)
+	end
+end
+
+for _, objeto in ipairs(Workspace:GetDescendants()) do
+	neutralizarAsiento(objeto)
+end
+
+Workspace.DescendantAdded:Connect(function(obj)
+	if obj:IsA("Seat") or obj:IsA("VehicleSeat") then
+		task.wait(0.1)
+		neutralizarAsiento(obj)
+	end
+end)
+
+player.CharacterAdded:Connect(function(char)
+	local humanoid = char:WaitForChild("Humanoid")
+	humanoid:GetPropertyChangedSignal("Sit"):Connect(function()
+		if humanoid.Sit then
+			humanoid.Sit = false
+		end
+	end)
+end)
+
+print("Anti-sit is working.... Men.. I hate that chair...")
+
+end)
+local batp = anti:CreateButton("مضاد afk", function()
+
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/evxncodes/mainroblox/main/anti-afk", true))()
+
+
+end)
+local batp = troll:CreateButton("فلنق", function()
+
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/K1LAS1K/Ultimate-Fling-GUI/main/flingscript.lua"))()
+
+end)
+
+local batp = troll:CreateButton("اغتصاب", function()
+
+  loadstring(game:HttpGet("https://pastebin.com/raw/SvVYqTh6"))()
+
+end)
+
+
+
+
